@@ -3,7 +3,8 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --hot run src/index.ts"
+    "dev": "bun --hot run src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./build --minify"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",

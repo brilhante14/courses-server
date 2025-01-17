@@ -13,6 +13,10 @@ app.use(bodyParser.json());
 
 app.use('/', routes);
 
+app.use(function (req, res) {
+    res.sendStatus(404);
+});
+
 app.use(errorHandler);
 
 const port = 8080;
